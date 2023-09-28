@@ -1,13 +1,38 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main layout</title>
-</head>
-<body>
-    <h1>Mayn layout</h1>
-
-    {{{body}}}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/site.css" type="text/css" rel="stylesheet" />
+    <title>Mobile</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Browse</a></li>
+          <li><a href="/addCar">Add Car</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="search">
+      <div class="search-container">
+        <h1>Car Search</h1>
+        <form>
+          <div class="search-fields">
+            <input type="text" placeholder="Search by Brand" />
+            <input type="text" placeholder="Search by Model" />
+            <div class="price-range">
+              <input type="number" placeholder="Price From" />
+              <span>-</span>
+              <input type="number" placeholder="Price Up To" />
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      {{{body}}}
+    </section>
+    <footer>@Mobile: Node.js project by Iliya Kashev</footer>
+  </body>
 </html>
